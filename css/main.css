@@ -242,6 +242,7 @@ body {
     background-color: var(--bg-primary-color);
     cursor: pointer;
     transition: .15s ease;
+    z-index: 10;
 }
 
 .carrousel__row:hover {
