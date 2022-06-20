@@ -4,10 +4,12 @@
     --bg-terciary-color: #008251;
     --text-primary-color: #33302f;
     --text-color-secondary: #fff;
+    --text-color-terciary: #9f9f9f;
     --title-color-primary: #ff6600;
     --title-color-secondary: #008251;
 
     --nav-height: 103px;
+    --card-width: 250px;
 }
 
 /* Reset */
@@ -161,6 +163,7 @@ body {
     min-height: 100vh;
 }
 
+/* Hero Section */
 .hero {
     width: 100%;
 }
@@ -310,6 +313,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     padding: 30px 40px;
+    gap: 5px;
 }
 
 .help__item {
@@ -339,7 +343,99 @@ body {
     font-weight: 500;
 }
 
-/* Responsive 1300px */
+/* News Section */
+.news {
+    width: 100%;
+    min-height: 80vh;
+    padding-top: 40px;
+}
+
+.news__title {
+    color: var(--title-color-primary);
+    font-size: 25px;
+    line-height: 1.8;
+}
+
+.news__subtitle {
+    color: var(--text-primary-color);
+    margin-bottom: 40px;
+}
+
+.news__title,
+.news__subtitle {
+    text-align: center;
+}
+
+/* Card container */
+.card__container {
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.card__list {
+    width: 100vw;
+    min-height: 500px;
+}
+
+.card__item {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+/* Card */
+.card {
+    width: var(--card-width);
+    height: fit-content;
+}
+
+.card__image {
+    width: var(--card-width);
+    height: var(--card-width);
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card__content {
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.card__date {
+    color: var(--text-color-terciary);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.card__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.card__category {
+    color: var(--text-color-secondary);
+    padding: 8px 10px;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+/* Category type - background */
+.card__category--news { background-color: #ff6600 }
+.card__category--agent { background-color: #00794d }
+.card__category--blog { background-color: #ff5100 }
+
+.card__description {
+    color: var(--text-primary-color);
+    font-weight: 300;
+}
+
+/* Responsive 1100px */
 @media screen and (max-width: 1100px) {
     /* Nav */
     .nav__brand {
