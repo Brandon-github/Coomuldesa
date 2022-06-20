@@ -1,6 +1,7 @@
 :root {
     --bg-primary-color: #fff;
     --bg-secondary-color: #ff6600;
+    --bg-terciary-color: #008251;
     --text-primary-color: #33302f;
     --text-color-secondary: #fff;
     --title-color-primary: #ff6600;
@@ -40,7 +41,6 @@ button {
 /* Global */
 body {
     font-family: 'Roboto', sans-serif;
-    background: #ccc;
     overflow-x: hidden;
 }
 
@@ -84,8 +84,8 @@ body {
 }
 
 .nav__link {
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 12px;
+    font-weight: 500;
     color: var(--text-primary-color);
 }
 
@@ -173,8 +173,16 @@ body {
     display: flex;
 }
 
+.carrousel__list {
+    display: flex;
+    transition: .3s linear;
+}
+
 .carrousel__item {
+    position: relative;
     height: inherit;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .carrousel__item::before {
@@ -184,18 +192,22 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(250, 246, 246, 0.9);
 }
 
 .carrousel__image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: inherit;
-    object-fit: cover;;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .carrousel__content {
     position: absolute;
-    top: 5rem;
+    top: 6rem;
     left: 12rem;
 }
 
@@ -291,9 +303,49 @@ body {
     right: 40px;
 }
 
+/* Helps */
+.help__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 40px;
+}
+
+.help__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 120px;
+    gap: 10px;
+}
+
+.help__icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(130deg, var(--bg-secondary-color), #ffcc00);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: var(--bg-primary-color);
+}
+
+.help__title {
+    text-align: center;
+    color: var(--text-primary-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+
 /* Responsive 1300px */
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1100px) {
     /* Nav */
+    .nav__brand {
+        height: 40px;
+    }
+
     .nav__list {
         position: fixed;
         top: var(--nav-height);
