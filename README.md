@@ -1,4 +1,8 @@
-# Coomuldesa
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/71775908/174915462-e6d093e7-2a10-48a9-a549-1cecdea3baba.png" width="180">
+  <h2 align="center">Coomuldesa</h2>
+</p>
 
 Desarrollo y maquetacion de la interface de una landing page de la empresa Coomuldesa. Para la resolucion de la construccion de la página terminada y adaptable a los dispositivos.
 
