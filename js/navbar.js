@@ -24,8 +24,8 @@ function togglerSocials() {
     let socials = $('.nav__socials');
 
     // validacion de ancho de pantalla
-    if ($(document).width() < 1100) {
-        $('.nav__list').append(socials)
+    if ($(window).width() < 1100) {
+        $('.nav__list').append(socials);
     } else {
         $('nav__socials').remove();
         $('.nav').append(socials);
@@ -38,7 +38,7 @@ $(window).on({
         togglerSocials();
     },
     resize: function() {
-        togglerSocials()
+        togglerSocials();
     }
 });
 
