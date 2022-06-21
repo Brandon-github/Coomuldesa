@@ -48,7 +48,7 @@
             </li>
         </ul>
         <div class="nav__socials">
-            <span class="nav__social">
+            <span class="nav__social" id="search">
                 <span class="nav__icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </span>
@@ -74,6 +74,12 @@
                 </span>
             </a>
         </div>
+        <form action="" class="nav__search">
+            <input type="text" autocomplete="off" class="nav__input">
+            <span class="nav__exit">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+        </form>
         <div class="burger">
             <span class="burger__item"></span>
             <span class="burger__item"></span>
@@ -187,7 +193,7 @@
             <p class="news__subtitle">Información de Interés para nuestros asociados.</p>
             <div class="card__container">
                 <div class="card__list">
-                    <div class="card__item">
+                    <div class="card__item active">
                         <div class="card">
                             <img src="/img/news/news_image1.jpg" alt="news" class="card__image">
                             <div class="card__content">
@@ -225,6 +231,99 @@
                             </div>
                         </div>
                     </div>
+                    <div class="card__item">
+                        <div class="card">
+                            <img src="/img/news/news_image2.jpg" alt="news" class="card__image">
+                            <div class="card__content">
+                                <div class="card__block">
+                                    <span class="card__date">12 enero, 2021</span>
+                                    <span class="card__category card__category--news">noticias</span>
+                                </div>
+                                <p class="card__description">
+                                    Guadalupe ya cuenta con un punto de atencion por corresponsal.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/img/news/news_image2.jpg" alt="news" class="card__image">
+                            <div class="card__content">
+                                <div class="card__block">
+                                    <span class="card__date">12 enero, 2021</span>
+                                    <span class="card__category card__category--agent">agenda</span>
+                                </div>
+                                <p class="card__description">
+                                    Guadalupe ya cuenta con un punto de atencion por corresponsal.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="/img/news/news_image3.png" alt="news" class="card__image">
+                            <div class="card__content">
+                                <div class="card__block">
+                                    <span class="card__date">12 enero, 2021</span>
+                                    <span class="card__category card__category--blog">blog</span>
+                                </div>
+                                <p class="card__description">
+                                    Guadalupe ya cuenta con un punto de atencion por corresponsal.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news__block">
+                    <a href="" class="news__text">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        Ver Indicadores Económicos
+                    </a>
+                    <div class="card__controls">
+                        
+                    </div>
+                    <a href="" class="news__all">
+                        <i class="fa-solid fa-border-all"></i>
+                        Ver todas las Publicaciones
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="secvices">
+            <h2 class="service__title">Nuestros Servicios</h2>
+            <p class="service__subtitle">Nuestra experiencia, garantizan la multiplicacion de sus ahorros y hacen posible la financiacion de sus proyectos.</p>
+            <div class="service__group">
+                <div class="service__group-item">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-piggy-bank"></i>
+                    </div>
+                    <span class="service__text">ahorros</span>
+                </div>
+                <div class="service__group-item">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <span class="service__text">créditos</span>
+                </div>
+                <div class="service__group-item">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+                    <span class="service__text">giros red conecta</span>
+                </div>
+                <div class="service__group-item">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <span class="service__text">convenios</span>
+                </div>
+                <div class="service__group-item">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <span class="service__text">servicios en línea</span>
+                </div>
+                <div class="service__group-item">
+                    <div class="service__icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <span class="service__text">red oficial</span>
                 </div>
             </div>
         </section>
@@ -236,6 +335,7 @@
     <!-- Main Scripts -->
     <script src="/js/carrousel.js"></script>
     <script src="/js/navbar.js"></script>
+    <script src="/js/news.js"></script>
 </body>
 
 </html>
