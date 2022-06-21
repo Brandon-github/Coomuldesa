@@ -554,7 +554,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 500px;
+    height: 70vh;
     background: linear-gradient(180deg, #ff9e00, #fe6d00);
     z-index: -1;
 }
@@ -587,14 +587,22 @@ body {
     max-width: 600px;
     font-size: 1rem;
     font-weight: 400;
+    padding: 0 40px;
 }
 
 .service__group {
-    display: flex;
-    justify-content: space-around;
     margin: auto;
     margin-top: 60px;
     max-width: 1000px;
+    height: fit-content;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.service__group-list {
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
 }
 
 .service__group-item {
@@ -673,6 +681,7 @@ body {
 .company {
     display: flex;
     height: 150px;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     color: #465058;
@@ -725,6 +734,11 @@ body {
 
 /* Responsive 500px */
 @media screen and (max-width: 500px) {
+    /* Navbar */
+    .nav__brand {
+        height: 10px;
+    }
+
     /* Carrousel */
     .carrousel__title {
         font-size: 20px;
@@ -737,6 +751,15 @@ body {
 
     .carrousel__link {
         font-size: 16px;
+    }
+}
+
+/* Responsive 600px */
+@media screen and (max-width: 600px) {
+    /* Service section */
+    .company {
+        flex-direction: column;
+        margin: 20px 0;
     }
 }
 
@@ -753,10 +776,24 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    /* Service sertion */
+    .service__item {
+        padding: 0;
+    }
+
+    .service__content {
+        padding: 20px;
+    }
+
+    .points {
+        gap: 8px;
+    }
 }
 
 /* Responsive 950px */
 @media screen and (max-width: 950px) {
+    /* News Section */
     .card__list,
     .card__container {
         overflow-x: scroll;
@@ -767,7 +804,7 @@ body {
         padding: 0 40px;
     }
 
-    /* News Section */
+    
     .news__block {
         justify-content: center;
     }
@@ -775,6 +812,16 @@ body {
     .news__text,
     .news__all {
         display: none;
+    }
+
+    /* Services sertion */
+    .service__container {
+        width: 100%;
+        height: 500px;
+    }
+
+    .service__group {
+        max-width: 100%;
     }
 }
 
@@ -842,4 +889,24 @@ body {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    /* Services section */
+    .service__container {
+        width: 90%;
+    }
+
+    .service__controls {
+        bottom: 20px;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+
+    .service__image {
+        display: none;
+    }
+
+    .service__group {
+        overflow-x: scroll;
+    }
+}
 
