@@ -4,6 +4,18 @@ $('.burger').click(function() {
     $('.nav__list').toggleClass('active');
 });
 
+// Evento para activar el buscador
+$('#search').click(function() {
+    $('.nav__search').addClass('active');
+    $('.nav__input').focus();
+});
+
+// Evento para desactivar buscador
+$('.nav__exit').click(function() {
+    $('.nav__search').removeClass('active');
+    $('.nav__input').val('');
+});
+
 /**
  * Control de adaptacion de redes 
  * sociales de la barra de navegacion
