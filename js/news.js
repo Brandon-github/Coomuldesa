@@ -5,7 +5,11 @@ $(document).ready(function () {
     //remover clase active de todos los elementos
     $(this).removeClass("active");
 
-    // Validacion de
+    /**
+     * Validacion de que el indice 
+     * del elemento sea 0 al hacer
+     * el recorrido
+     */
     if (index === 0) {
       $(this).addClass("active");
     }
@@ -38,7 +42,7 @@ $(document).ready(function () {
     $(this).click(function () {
       /**
        * Remover la clase active de todos los elementos
-       * y adicionarla a elemento selecionado
+       * y adicionarla a elementos selecionados
        */
       $('.card__control').removeClass('active');
       $(this).addClass('active');
