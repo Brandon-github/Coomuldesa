@@ -4,7 +4,7 @@ Desarrollo y maquetacion de la interface de una landing page de la empresa Coomu
 
 ## Utilidades
  
-Bancons de iconos e imagenes implementador para las illustraciones de la pagina y sus elementos.
+Bancons de iconos e imagenes implementadas para las illustraciones de la pagina y sus elementos en el desarrollo de la pagina.
 
 
 ### Iconos
@@ -19,16 +19,22 @@ Bancons de iconos e imagenes implementador para las illustraciones de la pagina 
 ## Tecnologias
 
 ### General
+
 Las tecnologias utilizadas para el desarrollo de la pagina son las siguientes:
 
-> - Html
-> - Css
-> - Javascript
-> - Jquery
+- Html
+- Css
+- Javascript
+- Jquery
 
 ### Librerias
 
 - ### [Jquery](https://jquery.com/)
+
+## Fuentes
+
+Fuente usada en la pagina **Roboto**
+- ### [Google Fonts](https://fonts.google.com/)
 
 
 
