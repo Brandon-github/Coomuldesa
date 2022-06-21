@@ -1,4 +1,3 @@
 $(window).ready(function() {
-    //$('.loader').addClass('hide');
-    
+    $('.loader').addClass('hide');
 });
