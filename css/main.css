@@ -541,6 +541,23 @@ body {
     background-size: cover;
 }
 
+/* Responsive 500px */
+@media screen and (max-width: 500px) {
+    /* Carrousel */
+    .carrousel__title {
+        font-size: 20px;
+    }
+
+    .carrousel__subtitle,
+    .carrousel__paragraph {
+        margin-bottom: 10px;
+    }
+
+    .carrousel__link {
+        font-size: 16px;
+    }
+}
+
 /* Responsive 900px */
 @media screen and (max-width: 900px) {
     /* Carrousel */
