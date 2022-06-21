@@ -352,7 +352,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     padding: 30px 40px;
-    gap: 5px;
+    gap: 30px;
 }
 
 .help__item {
